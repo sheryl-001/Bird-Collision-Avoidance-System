@@ -1,0 +1,34 @@
+Used Data from: https://www.kaggle.com/competitions/birdclef-2021/data
+This project aims to study and quantify the collision of Aves with an aircraft. Though, these strikes are natural, it affects and causes a detrimental effect on aircraft safety. These collisions can lead to failure of an aircraft’s engine as the bird can get stuck in the engine which causes failure of the plane’s turbine. Sometimes, this can also lead to a plane crash. Hence, this project aims to adopt a deep learning model that has the potential to identify and classify birds with the help of a dataset which consists of sounds of various bird species. This will aid a remarkable breakthrough in identifying birds before collision.
+The main components of our project:
+•	Dataset
+•	Conversion of each audio file to an image.
+•	Trained a CNN on these images.
+•	Testing the model. 
+
+MODEL IDENTIFIED 
+Model identified for this project is Convolutional Neural Networks.
+CNNs or convolutional neural nets are a type of deep learning algorithm that does really well at learning images. That’s because they can learn patterns that are translation invariant and have spatial hierarchies.
+Translation invariance is the ability to ignore positional shifts, or translations, of the target in the image. Thus, CNN is better suited to dealing with image datasets than their ordinary counterparts.
+CNN is a mathematical construct that is typically composed of three types of layers (or building blocks): 
+•	Convolution
+•	Pooling
+•	fully connected layers. 
+The first two, convolution and pooling layers, perform feature extraction, whereas the third, a fully connected layer, maps the extracted features into final output, such as classification.
+
+RESULTS AND DISCUSSION (Metrics and measures)
+•	Data is prepared taking audio files rated >= 4 having more than 175 samples.
+•	Labels are saved onto a PKL file.
+•	30332 spectrograms are extracted.
+•	Model is trained using Keras
+COST CURVE:
+A cost curve (or training curve) plots the optimal value of a model's loss function for a training set against this loss function evaluated on a validation data set with same parameters as produced the optimal function.
+MODEL 1
+ACCURACY: 97.7%
+MODEL 2
+ACCURACY: 85.72%
+
+SUMMARY
+The purpose of this study is to detect the presence of birds in a particular area, aimed at being used in airports and aircrafts to prevent the collision of birds with an aircraft. This is being done by developing a deep learning model to identify the species of birds and classify them from a sound recording of their chirps.
+The training is done by collecting a dataset from The Cornell Lab of Ornithology who worked in collaboration with Google Research, LifeCLEF and Xeno-canto which contained acoustic soundscapes of birds downloaded from the generous contributors on xenocanto.org. The data is processed by extracting the signals of interest and transforming into a spectrogram which is then fed into a Convolutional Neural Network model using Keras. Two models were being trained with each of them giving the accuracy the accuracy of 97.7% and 85.72% respectively.
+The extracted models can now be used to detect the presence of birds and classify their species which could be used to prevent the collision of birds with the aircrafts. The effectiveness of the result is still to be speculated as the system is being used in real time with real life situations.
